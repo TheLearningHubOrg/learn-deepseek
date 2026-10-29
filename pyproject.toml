@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learn-deepseek"
+version = "0.1.0"
+description = "DeepSeek V3 & R1 Architecture Masterclass: Multi-Head Latent Attention (MLA), DeepSeekMoE, DualPipe & GRPO"
+readme = "README.md"
+authors = [{ name = "The Learning Hub Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "typing_extensions>=4.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
